@@ -3,8 +3,8 @@ Grobber
 
 Image generator based on a string value
 
-grobber = Grobber::Image.new('foo')
-grobber.write('foo.jpg')
+    grobber = Grobber::Image.new('foo')
+    grobber.write('foo.jpg')
 
 Grobber will always render the same image for the same string. 
 
