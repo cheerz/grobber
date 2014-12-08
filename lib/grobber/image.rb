@@ -26,9 +26,9 @@ module Grobber
       end
     end
 
-    def write path
-      magick = to_rmagick
-      magick.write path
+    def write path, size = 480
+      magick = to_rmagick size
+      magick.write(path) { self.quality = 95 }
       magick.destroy!
       path
     end
@@ -77,9 +77,6 @@ module Grobber
       _base_color = color_string(base_color)
       Magick::Image.new(size_px,size_px) do
         self.background_color = _base_color
-      end.tap do |im|
-        im.x_resolution = 300
-        im.y_resolution = 300
       end
     end
 

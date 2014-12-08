@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
-  s.name        = 'Grobber'
-  s.version     = '0.0.0'
+  s.name        = 'grobber'
+  s.version     = '0.0.2'
   s.date        = '2014-12-08'
   s.summary     = "Grobber Generator"
   s.description = "Generate a picture based on a string value"
