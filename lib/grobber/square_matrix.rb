@@ -44,11 +44,11 @@ class SquareMatrix
   end
 
   def flop
-    SquareMatrix.new flop_array
+    self.class.new flop_array
   end
 
   def flip_flop
-    SquareMatrix.new flip_flop_array
+    self.class.new flip_flop_array
   end
 
   def flip_flop_array
@@ -62,7 +62,7 @@ class SquareMatrix
   end
 
   def flip
-    SquareMatrix.new flip_array
+    self.class.new flip_array
   end
 
   def right_add_array square_matrix

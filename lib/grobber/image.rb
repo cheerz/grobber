@@ -21,7 +21,7 @@ module Grobber
         block_width = size_px / 6
         binary_matrix.each_with_coords do |b, x, y|
           next if b.zero?
-          add_block magick, hexcolor(second_color), x, y, block_width
+          add_block magick, color_string(second_color), x, y, block_width
         end
       end
     end
@@ -49,13 +49,13 @@ module Grobber
 
     def binary_array
       signature[0..8].split(//).map do |c|
-        c.hex < 8 ? 1 : 0
+        2 * c.hex / 16
       end
     end
 
     private
 
-    def hexcolor hex_value
+    def color_string hex_value
       "##{ hex_value }"
     end
 
@@ -74,7 +74,7 @@ module Grobber
     end
 
     def new_base_image size_px
-      _base_color = hexcolor(base_color)
+      _base_color = color_string(base_color)
       Magick::Image.new(size_px,size_px) do
         self.background_color = _base_color
       end.tap do |im|
