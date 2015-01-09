@@ -1,4 +1,5 @@
 Grobber
+[![Gem Version](https://badge.fury.io/rb/grobber.svg)](http://badge.fury.io/rb/grobber)
 =======
 
 Image generator based on a string value
