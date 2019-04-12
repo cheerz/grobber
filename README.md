@@ -1,10 +1,22 @@
 Grobber
 =======
 [![Gem Version](https://badge.fury.io/rb/grobber.svg)](http://badge.fury.io/rb/grobber)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6a6284f9262f82a565b0/maintainability)](https://codeclimate.com/repos/5cb0bfe29f67f402c2002ab5/maintainability)
+[![CircleCI](https://circleci.com/gh/cheerz/grobber.svg?style=svg)](https://circleci.com/gh/cheerz/grobber)
 
 Image generator based on a string value
 
-    grobber = Grobber::Image.new('foo')
+# Install
+
+    gem install grobber
+    
+or in your Gemfile:
+
+    gem 'grobber'
+
+## How to use
+
+    grobber = Grobber::Image.new('some text string')
     grobber.write('foo.jpg')
 
 Grobber will always render the same image for the same string. 
