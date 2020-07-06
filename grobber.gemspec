@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'grobber'
-  s.version     = '0.0.5'
+  s.version     = '0.0.6'
   s.summary     = 'Grobber Generator'
   s.description = 'Generate a picture based on a string value'
   s.authors     = ['Theo Carrive']
@@ -10,6 +10,6 @@ Gem::Specification.new do |s|
     'http://rubygems.org/gems/grobber'
   s.license       = 'MIT'
   s.add_runtime_dependency 'rmagick',
-    ['>= 2.0.0']
+    ['>= 3.0.0']
   s.add_development_dependency 'rspec', '~> 3.0'
 end
