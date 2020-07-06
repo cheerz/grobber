@@ -10,7 +10,6 @@ Gem::Specification.new do |s|
     'http://rubygems.org/gems/grobber'
   s.license       = 'MIT'
   s.add_runtime_dependency 'rmagick',
-    ['~> 2.16', '>= 2.0.0']
+    ['>= 2.0.0']
   s.add_development_dependency 'rspec', '~> 3.0'
-
 end
